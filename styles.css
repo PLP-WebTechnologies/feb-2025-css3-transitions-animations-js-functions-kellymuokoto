@@ -1,0 +1,63 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Button with hover transition */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Glow effect on hover */
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #45a049, 0 0 20px #45a049;
+}
+
+/* Keyframe animation for an image */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+img {
+  width: 250px;
+  height: auto;
+  animation: fadeIn 1s ease-in-out;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Animation for the div */
+.animate-me {
+  width: 100px;
+  height: 100px;
+  background-color: #4CAF50;
+  margin: 20px auto;
+  border-radius: 10px;
+  transition: transform 1s ease-in-out;
+}
+
+.animate-me.animate {
+  transform: rotate(360deg);
+}
